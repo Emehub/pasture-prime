@@ -2,10 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cliftech-react-basic</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/logo.jpeg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="/logo.jpeg" />
+    <meta name="theme-color" content="#1a3a1a" />
+
+    <!-- SEO -->
+    <title>Pasture Prime Ltd — Premium Poultry, Naturally Raised</title>
+    <meta
+      name="description"
+      content="Pasture Prime Ltd — structured poultry aggregation, processing, and distribution built on farmer partnerships and a zero-waste circular model."
+    />
+
+    <!-- Fonts: Fraunces (display) + Public Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap"
+      as="style"
+      onload="
+        this.onload = null
+        this.rel = 'stylesheet'
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

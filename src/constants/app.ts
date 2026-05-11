@@ -1,7 +1,11 @@
 export const APP = {
-  NAME: 'Cliftech React',
-  DESCRIPTION: 'Production-ready React starter template',
-  AUTHOR: 'Isaiah Clifford Opoku',
+  NAME: 'Pasture Prime Ltd',
+  DESCRIPTION: 'Premium Poultry, Naturally Raised',
+  AUTHOR: 'Pasture Prime Ltd',
+  PHONE: '+233 505949575',
+  EMAIL: 'info@pastureprimeltd.com',
+  ADDRESS: 'Mampong-Akuapem, ER, Ghana',
+  HOURS: 'Mon-Fri: 8am - 5pm',
 } as const
 
 export const BREAKPOINTS = {

@@ -1,1 +1,68 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-green-dark: #1a3a1a;
+  --color-green-mid: #2d6a2d;
+  --color-green-light: #4a9c4a;
+  --color-green-pale: #e8f5e8;
+  --color-gold: #c8a850;
+  --color-gold-light: #f0e0a0;
+  --color-off-white: #f8f8f6;
+  --color-bgray-100: #f4f4f2;
+  --color-bgray-200: #e8e8e4;
+  --color-bgray-400: #a0a09a;
+  --color-bgray-600: #6b6b65;
+  --color-bgray-800: #2c2c28;
+  --color-brand-text: #1e1e1a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  body {
+    font-family: 'Public Sans', system-ui, sans-serif;
+    color: #1e1e1a;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+@keyframes bounce-scroll {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bounce-scroll {
+  animation: bounce-scroll 2s infinite;
+}
