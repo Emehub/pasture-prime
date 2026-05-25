@@ -93,7 +93,7 @@ export const ServicesPage = () => {
         title="Our Services"
         subtitle="End-to-end poultry solutions, from farm-gate aggregation and hygienic processing to circular by-product valorisation and tailored large-scale services."
         breadcrumb="Services"
-        bgImage="/images/Processing%20and%20Distribution.png"
+        bgImage="/images/100%25%20Fresh%20or%20Frozen.png"
       />
 
       {/* ── STICKY SERVICE NAV ────────────────────────── */}
@@ -186,8 +186,8 @@ export const ServicesPage = () => {
             }}
           >
             <img
-              src="/images/Tailored Services 1.png"
-              alt="Tailored Processing Service"
+              src="/images/Processing and Distribution 1.png"
+              alt="Processing and Distribution"
               className="w-full object-contain rounded-2xl shadow-xl"
             />
             <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-6 py-5 text-center shadow-xl border border-bgray-100">
@@ -388,8 +388,8 @@ export const ServicesPage = () => {
             }}
           >
             <img
-              src="/images/Tailored Services.png"
-              alt="Tailored Services"
+              src="/images/Tailored Services 1.png"
+              alt="Tailored Processing Service"
               className="w-full object-contain rounded-2xl shadow-xl"
             />
           </div>

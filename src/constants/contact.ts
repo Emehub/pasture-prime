@@ -2,20 +2,44 @@ import {
   FaPhone,
   FaEnvelope,
   FaLocationDot,
-  FaClock,
   FaStore,
   FaTractor,
   FaIndustry,
   FaChartBar,
   FaHandshake,
+  FaWhatsapp,
 } from 'react-icons/fa6'
 import { APP } from './app'
 
 export const CONTACT_CARDS = [
-  { icon: FaPhone, title: 'Call Us', main: APP.PHONE, sub: APP.HOURS },
-  { icon: FaEnvelope, title: 'Email Us', main: APP.EMAIL, sub: 'We reply within 24 hours' },
-  { icon: FaLocationDot, title: 'Visit Us', main: 'Mampong-Akuapem, ER', sub: 'Ghana' },
-  { icon: FaClock, title: 'Working Hours', main: 'Monday to Friday', sub: '8:00am to 5:00pm' },
+  {
+    icon: FaPhone,
+    title: 'Call Us',
+    main: APP.PHONE,
+    sub: APP.HOURS,
+    href: `tel:${APP.PHONE.replace(/\s/g, '')}`,
+  },
+  {
+    icon: FaWhatsapp,
+    title: 'WhatsApp',
+    main: APP.PHONE,
+    sub: 'Chat with us on WhatsApp',
+    href: APP.WHATSAPP,
+  },
+  {
+    icon: FaEnvelope,
+    title: 'Email Us',
+    main: APP.EMAIL,
+    sub: 'We reply within 24 hours',
+    href: `mailto:${APP.EMAIL}`,
+  },
+  {
+    icon: FaLocationDot,
+    title: 'Visit Us',
+    main: 'Mampong-Akuapem, ER',
+    sub: 'Ghana',
+    href: undefined,
+  },
 ]
 
 export const ENQUIRY_TYPES = [
@@ -74,9 +98,15 @@ export const FAQS = [
 ]
 
 export const CONTACT_DETAILS = [
-  { icon: FaLocationDot, title: 'Address', value: `Pasture Prime Ltd, ${APP.ADDRESS}` },
-  { icon: FaPhone, title: 'Phone', value: APP.PHONE },
-  { icon: FaEnvelope, title: 'Email', value: APP.EMAIL },
+  {
+    icon: FaLocationDot,
+    title: 'Address',
+    value: `Pasture Prime Ltd, ${APP.ADDRESS}`,
+    href: undefined,
+  },
+  { icon: FaPhone, title: 'Phone', value: APP.PHONE, href: `tel:${APP.PHONE.replace(/\s/g, '')}` },
+  { icon: FaWhatsapp, title: 'WhatsApp', value: APP.PHONE, href: APP.WHATSAPP },
+  { icon: FaEnvelope, title: 'Email', value: APP.EMAIL, href: `mailto:${APP.EMAIL}` },
 ]
 
 export const INTEREST_OPTIONS = [
