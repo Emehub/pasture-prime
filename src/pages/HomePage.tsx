@@ -50,7 +50,7 @@ export const HomePage = () => {
             }}
           >
             <iframe
-              src="https://www.youtube.com/embed/nSEmtk5VwG0?autoplay=1&mute=1&loop=1&playlist=nSEmtk5VwG0&controls=0&rel=0&modestbranding=1&showinfo=0&disablekb=1&start=21"
+              src="https://www.youtube.com/embed/nSEmtk5VwG0?autoplay=1&mute=1&loop=1&playlist=nSEmtk5VwG0&controls=0&rel=0&modestbranding=1&showinfo=0&disablekb=1&start=35"
               allow="autoplay; encrypted-media"
               title="Hero background video"
               className="absolute inset-0 w-full h-full border-0"
