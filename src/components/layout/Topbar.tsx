@@ -4,10 +4,23 @@ import {
   FaClock,
   FaFacebookF,
   FaInstagram,
-  FaXTwitter,
   FaLinkedinIn,
 } from 'react-icons/fa6'
 import { APP } from '@/constants'
+
+const topSocials = [
+  { icon: FaFacebookF, label: 'Facebook', href: 'https://www.facebook.com/share/18mh3dJw9o/' },
+  {
+    icon: FaInstagram,
+    label: 'Instagram',
+    href: 'https://www.instagram.com/pasture_prime2025?igsh=cmRiZmR5MGI5Z2V0',
+  },
+  {
+    icon: FaLinkedinIn,
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/pasture-prime-ltd/',
+  },
+]
 
 export const Topbar = () => (
   <div className="bg-green-dark text-white/85 text-sm py-2 hidden md:block">
@@ -30,15 +43,12 @@ export const Topbar = () => (
         </span>
       </div>
       <div className="flex gap-3.5">
-        {[
-          { icon: FaFacebookF, label: 'Facebook' },
-          { icon: FaInstagram, label: 'Instagram' },
-          { icon: FaXTwitter, label: 'X' },
-          { icon: FaLinkedinIn, label: 'LinkedIn' },
-        ].map(({ icon: Icon, label }) => (
+        {topSocials.map(({ icon: Icon, label, href }) => (
           <a
             key={label}
-            href="#"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={label}
             className="w-6.5 h-6.5 flex items-center justify-center rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-all text-xs"
           >
