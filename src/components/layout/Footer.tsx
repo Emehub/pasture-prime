@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
-import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn, FaPaperPlane } from 'react-icons/fa6'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPaperPlane } from 'react-icons/fa6'
 import { ROUTES } from '@/constants/routes'
 import { APP } from '@/constants'
 
@@ -21,10 +21,17 @@ const serviceLinks = [
 ]
 
 const socials = [
-  { icon: FaFacebookF, label: 'Facebook' },
-  { icon: FaInstagram, label: 'Instagram' },
-  { icon: FaXTwitter, label: 'X' },
-  { icon: FaLinkedinIn, label: 'LinkedIn' },
+  { icon: FaFacebookF, label: 'Facebook', href: 'https://www.facebook.com/share/18mh3dJw9o/' },
+  {
+    icon: FaInstagram,
+    label: 'Instagram',
+    href: 'https://www.instagram.com/pasture_prime2025?igsh=cmRiZmR5MGI5Z2V0',
+  },
+  {
+    icon: FaLinkedinIn,
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/pasture-prime-ltd/',
+  },
 ]
 
 export const Footer = () => {
@@ -56,10 +63,12 @@ export const Footer = () => {
             partnerships and a zero-waste circular model.
           </p>
           <div className="flex gap-3">
-            {socials.map(({ icon: Icon, label }) => (
+            {socials.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
-                href="#"
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={label}
                 className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/70 text-[0.85rem] hover:bg-green-mid hover:border-green-mid hover:text-white transition-all"
               >
