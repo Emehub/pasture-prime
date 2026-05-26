@@ -40,12 +40,14 @@ export const AboutPage = () => {
               src="/images/Farmer Partnership and Smart Processing.png"
               alt="Farmer Partnerships"
               className="w-full h-[480px] object-cover rounded-2xl shadow-xl"
+              loading="lazy"
             />
             <div className="absolute -bottom-5 -left-5 w-44 h-32 rounded-xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <img
                 src="/images/Farm Gate Aggregation_1.png"
                 alt="Farm Gate"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -128,10 +130,10 @@ export const AboutPage = () => {
                 Empowering Farmers, Feeding Ghana
               </h3>
               <p className="text-bgray-600 leading-relaxed text-[0.95rem]">
-                To empower Ghana's poultry and livestock industry by serving as a dependable market
-                that ensures fair farm-gate pricing for smallholder and mid-sized farmers. We are
-                committed to providing consumers with premium, hygienically prepared meat products
-                that meet the highest quality standards.
+                To empower Ghana's poultry industry by serving as a dependable market that ensures
+                fair farm-gate pricing for smallholder and mid-sized farmers. We are committed to
+                providing consumers with premium, hygienically prepared meat products that meet the
+                highest quality standards.
               </p>
             </div>
 

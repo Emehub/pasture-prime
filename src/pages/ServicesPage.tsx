@@ -167,6 +167,7 @@ export const ServicesPage = () => {
               src="/images/Poultry Aggregation.png"
               alt="Poultry Aggregation"
               className="w-full object-contain rounded-2xl shadow-xl"
+              loading="lazy"
             />
           </div>
         </div>
@@ -189,6 +190,7 @@ export const ServicesPage = () => {
               src="/images/Processing and Distribution 1.png"
               alt="Processing and Distribution"
               className="w-full object-contain rounded-2xl shadow-xl"
+              loading="lazy"
             />
             <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-6 py-5 text-center shadow-xl border border-bgray-100">
               <span className="block font-display text-[1.6rem] font-bold text-green-mid">
@@ -391,6 +393,7 @@ export const ServicesPage = () => {
               src="/images/Tailored Services 1.png"
               alt="Tailored Processing Service"
               className="w-full object-contain rounded-2xl shadow-xl"
+              loading="lazy"
             />
           </div>
         </div>

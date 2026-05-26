@@ -122,6 +122,7 @@ export const FarmersPage = () => {
               src="/images/Our Farmer Network.png"
               alt="Smallholder and Midsized Farmers"
               className="w-full max-h-[520px] object-contain rounded-2xl shadow-xl"
+              loading="lazy"
             />
           </div>
 

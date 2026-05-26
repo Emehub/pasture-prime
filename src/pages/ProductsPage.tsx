@@ -51,6 +51,7 @@ export const ProductsPage = () => {
                     src={p.img}
                     alt={p.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-green-dark/90 via-green-dark/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -140,6 +141,7 @@ export const ProductsPage = () => {
                     src={p.img}
                     alt={p.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-green-dark/75 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5">

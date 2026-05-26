@@ -32,7 +32,16 @@ export default defineConfig({
     open: true,
   },
   build: {
-    sourcemap: true,
+    sourcemap: false,
     chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('react-dom') || id.includes('react/')) return 'react'
+          if (id.includes('react-router')) return 'router'
+          if (id.includes('react-icons')) return 'icons'
+        },
+      },
+    },
   },
 })
