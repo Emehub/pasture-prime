@@ -28,13 +28,13 @@ export const PageHero = ({
   return (
     <section className="relative py-28 md:py-44 min-h-[480px] flex items-center bg-green-dark overflow-hidden">
       {bgImage && (
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `url(${bgImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+        <img
+          src={bgImage}
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
       )}
       <div className="absolute inset-0 bg-gradient-to-r from-green-dark/92 via-green-dark/60 to-green-dark/20" />

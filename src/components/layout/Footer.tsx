@@ -80,15 +80,15 @@ export const Footer = () => {
 
         {/* Quick links */}
         <div>
-          <h4 className="text-white text-[0.9rem] font-bold uppercase tracking-widest mb-5">
+          <h3 className="text-white text-[0.9rem] font-bold uppercase tracking-widest mb-5">
             Quick Links
-          </h4>
+          </h3>
           <ul className="flex flex-col gap-2.5">
             {quickLinks.map((l) => (
               <li key={l.to}>
                 <Link
                   to={l.to}
-                  className="text-[0.88rem] text-white/65 hover:text-gold-light transition-colors"
+                  className="text-[0.88rem] text-white/80 hover:text-gold-light transition-colors"
                 >
                   {l.label}
                 </Link>
@@ -99,15 +99,15 @@ export const Footer = () => {
 
         {/* Services */}
         <div>
-          <h4 className="text-white text-[0.9rem] font-bold uppercase tracking-widest mb-5">
+          <h3 className="text-white text-[0.9rem] font-bold uppercase tracking-widest mb-5">
             Our Services
-          </h4>
+          </h3>
           <ul className="flex flex-col gap-2.5">
             {serviceLinks.map((l) => (
               <li key={l.to}>
                 <Link
                   to={l.to}
-                  className="text-[0.88rem] text-white/65 hover:text-gold-light transition-colors"
+                  className="text-[0.88rem] text-white/80 hover:text-gold-light transition-colors"
                 >
                   {l.label}
                 </Link>
@@ -118,9 +118,9 @@ export const Footer = () => {
 
         {/* Newsletter */}
         <div>
-          <h4 className="text-white text-[0.9rem] font-bold uppercase tracking-widest mb-3">
+          <h3 className="text-white text-[0.9rem] font-bold uppercase tracking-widest mb-3">
             Stay Updated
-          </h4>
+          </h3>
           <p className="text-[0.88rem] mb-5">
             Subscribe to our newsletter for updates on products, farmer stories, and industry news.
           </p>
@@ -138,6 +138,7 @@ export const Footer = () => {
             />
             <button
               type="submit"
+              aria-label="Subscribe to newsletter"
               className="px-4 py-3 bg-green-mid text-white hover:bg-green-light transition-colors"
             >
               <FaPaperPlane />

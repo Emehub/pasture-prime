@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router'
 import { FaArrowRight } from 'react-icons/fa6'
 import { CTABanner } from '@/components/common'
@@ -15,6 +16,12 @@ import { FarmerTeaser } from '@/components/ui/FarmerTeaser'
 
 /* ─── page ──────────────────────────────────────────────────────── */
 export const HomePage = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false)
+  useEffect(() => {
+    const id = window.setTimeout(() => setVideoLoaded(true), 3000)
+    return () => window.clearTimeout(id)
+  }, [])
+
   const { ref: pillarsRef, inView: pillarsIn } = useInView(0.1)
   const { ref: aboutImgRef, inView: aboutImgIn } = useInView(0.2)
   const { ref: aboutTextRef, inView: aboutTextIn } = useInView(0.2)
@@ -37,26 +44,27 @@ export const HomePage = () => {
             decoding="sync"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              minWidth: '177.78vh',
-              minHeight: '56.25vw',
-              width: '100%',
-              height: '100%',
-            }}
-          >
-            <iframe
-              src="https://www.youtube.com/embed/nSEmtk5VwG0?autoplay=1&mute=1&loop=1&playlist=nSEmtk5VwG0&controls=0&rel=0&modestbranding=1&showinfo=0&disablekb=1&start=35&end=252"
-              allow="autoplay; encrypted-media"
-              title="Hero background video"
-              loading="lazy"
-              className="absolute inset-0 w-full h-full border-0"
-            />
-          </div>
+          {videoLoaded && (
+            <div
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                minWidth: '177.78vh',
+                minHeight: '56.25vw',
+                width: '100%',
+                height: '100%',
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/nSEmtk5VwG0?autoplay=1&mute=1&loop=1&playlist=nSEmtk5VwG0&controls=0&rel=0&modestbranding=1&showinfo=0&disablekb=1&start=35&end=252"
+                allow="autoplay; encrypted-media"
+                title="Hero background video"
+                className="absolute inset-0 w-full h-full border-0"
+              />
+            </div>
+          )}
           {/* Covers YouTube title/info overlay at top of video */}
           <div
             className="absolute top-0 left-0 right-0 h-[18%] z-10"
