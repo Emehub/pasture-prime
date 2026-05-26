@@ -18,7 +18,7 @@ import { FarmerTeaser } from '@/components/ui/FarmerTeaser'
 export const HomePage = () => {
   const [videoLoaded, setVideoLoaded] = useState(false)
   useEffect(() => {
-    const id = window.setTimeout(() => setVideoLoaded(true), 3000)
+    const id = window.setTimeout(() => setVideoLoaded(true), 5000)
     return () => window.clearTimeout(id)
   }, [])
 
@@ -37,7 +37,7 @@ export const HomePage = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Fallback / LCP hero image */}
           <img
-            src="/images/Farmer Partnership and Smart Processing.png"
+            src="/images/Farmer Partnership and Smart Processing.webp"
             alt=""
             aria-hidden="true"
             fetchPriority="high"
@@ -179,14 +179,14 @@ export const HomePage = () => {
             }}
           >
             <img
-              src="/images/Farmer Partnership and Smart Processing.png"
+              src="/images/Farmer Partnership and Smart Processing.webp"
               alt="Farmer Partnerships"
               className="w-full h-[460px] object-cover rounded-2xl shadow-xl"
               loading="lazy"
             />
             <div className="absolute -bottom-5 -left-5 w-44 h-32 rounded-xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <img
-                src="/images/Farm Gate Aggregation_1.png"
+                src="/images/Farm Gate Aggregation_1.webp"
                 alt="Farm Gate"
                 className="w-full h-full object-cover"
                 loading="lazy"

@@ -17,7 +17,7 @@ export const ProductsPage = () => {
         title="Our Poultry Products"
         subtitle="Premium cuts and value-added by-products, processed to the highest hygiene and quality standards and available fresh or frozen."
         breadcrumb="Products"
-        bgImage="/images/Farm%20Gate%20Aggregation_1.png"
+        bgImage="/images/Farm%20Gate%20Aggregation_1.webp"
       />
 
       {/* ── POULTRY CUTS ──────────────────────────────── */}

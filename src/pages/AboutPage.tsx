@@ -20,7 +20,7 @@ export const AboutPage = () => {
         title="About Pasture Prime Ltd"
         subtitle="A start-up built on farmer partnerships, hygienic processing, quality assurance, and a commitment to zero waste."
         breadcrumb="About Us"
-        bgImage="/images/Farm%20Gate%20Aggregation_1.png"
+        bgImage="/images/Farm%20Gate%20Aggregation_1.webp"
       />
 
       {/* ── WHO WE ARE ───────────────────────────────── */}
@@ -37,14 +37,14 @@ export const AboutPage = () => {
             }}
           >
             <img
-              src="/images/Farmer Partnership and Smart Processing.png"
+              src="/images/Farmer Partnership and Smart Processing.webp"
               alt="Farmer Partnerships"
               className="w-full h-[480px] object-cover rounded-2xl shadow-xl"
               loading="lazy"
             />
             <div className="absolute -bottom-5 -left-5 w-44 h-32 rounded-xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <img
-                src="/images/Farm Gate Aggregation_1.png"
+                src="/images/Farm Gate Aggregation_1.webp"
                 alt="Farm Gate"
                 className="w-full h-full object-cover"
                 loading="lazy"

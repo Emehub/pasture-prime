@@ -21,14 +21,14 @@ export const FarmersPage = () => {
         title="Our Farmer Network"
         subtitle="Empowering smallholder and midsized poultry farmers with reliable market access, fair pricing, and the infrastructure to grow."
         breadcrumb="Our Farmers"
-        bgImage="/images/Our%20Farmer%20Network.png"
+        bgImage="/images/Our%20Farmer%20Network.webp"
       />
 
       {/* ── FARMER STORY ──────────────────────────────── */}
       <section className="bg-off-white py-24">
         <div className="max-w-[1200px] mx-auto px-6">
           <img
-            src="/images/The solutions.jpeg"
+            src="/images/The solutions.webp"
             alt="Solving the Fragmentation Problem"
             className="w-full rounded-2xl shadow-xl"
           />
@@ -119,7 +119,7 @@ export const FarmersPage = () => {
             }}
           >
             <img
-              src="/images/Our Farmer Network.png"
+              src="/images/Our Farmer Network.webp"
               alt="Smallholder and Midsized Farmers"
               className="w-full max-h-[520px] object-contain rounded-2xl shadow-xl"
               loading="lazy"
