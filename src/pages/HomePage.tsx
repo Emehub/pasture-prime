@@ -28,14 +28,14 @@ export const HomePage = () => {
       {/* ── HERO ─────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {/* Fallback image shown if video fails to load */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: 'url(/images/Farmer%20Partnership%20and%20Smart%20Processing.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
+          {/* Fallback / LCP hero image */}
+          <img
+            src="/images/Farmer Partnership and Smart Processing.png"
+            alt=""
+            aria-hidden="true"
+            fetchPriority="high"
+            decoding="sync"
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div
             style={{
@@ -53,6 +53,7 @@ export const HomePage = () => {
               src="https://www.youtube.com/embed/nSEmtk5VwG0?autoplay=1&mute=1&loop=1&playlist=nSEmtk5VwG0&controls=0&rel=0&modestbranding=1&showinfo=0&disablekb=1&start=35&end=252"
               allow="autoplay; encrypted-media"
               title="Hero background video"
+              loading="lazy"
               className="absolute inset-0 w-full h-full border-0"
             />
           </div>
@@ -173,12 +174,14 @@ export const HomePage = () => {
               src="/images/Farmer Partnership and Smart Processing.png"
               alt="Farmer Partnerships"
               className="w-full h-[460px] object-cover rounded-2xl shadow-xl"
+              loading="lazy"
             />
             <div className="absolute -bottom-5 -left-5 w-44 h-32 rounded-xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <img
                 src="/images/Farm Gate Aggregation_1.png"
                 alt="Farm Gate"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -265,6 +268,7 @@ export const HomePage = () => {
                     src={p.img}
                     alt={p.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-green-dark/95 via-green-dark/25 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
