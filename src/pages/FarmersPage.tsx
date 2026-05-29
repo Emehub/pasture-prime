@@ -22,6 +22,7 @@ export const FarmersPage = () => {
         subtitle="Empowering smallholder and midsized poultry farmers with reliable market access, fair pricing, and the infrastructure to grow."
         breadcrumb="Our Farmers"
         bgImage="/images/Our%20Farmer%20Network.webp"
+        compact
       />
 
       {/* ── FARMER STORY ──────────────────────────────── */}

@@ -9,6 +9,7 @@ interface PageHeroProps {
   subtitle: string
   breadcrumb: string
   bgImage?: string
+  compact?: boolean
 }
 
 export const PageHero = ({
@@ -17,6 +18,7 @@ export const PageHero = ({
   subtitle,
   breadcrumb,
   bgImage,
+  compact = false,
 }: PageHeroProps) => {
   const [visible, setVisible] = useState(false)
 
@@ -26,41 +28,54 @@ export const PageHero = ({
   }, [])
 
   return (
-    <section className="relative py-28 md:py-44 min-h-[480px] flex items-center bg-green-dark overflow-hidden">
-      {bgImage && (
-        <img
-          src={bgImage}
-          alt=""
-          aria-hidden="true"
-          fetchPriority="high"
-          decoding="async"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
-      )}
-      <div className="absolute inset-0 bg-gradient-to-r from-green-dark/92 via-green-dark/60 to-green-dark/20" />
-
+    <section className="bg-green-dark overflow-hidden">
       <div
-        className="relative z-10 max-w-[1200px] mx-auto px-6"
-        style={{
-          opacity: visible ? 1 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(22px)',
-          transition: 'opacity 0.7s ease 0.05s, transform 0.7s ease 0.05s',
-        }}
+        className={`grid grid-cols-1 lg:grid-cols-2 ${compact ? 'min-h-[280px]' : 'min-h-[340px]'}`}
       >
-        <h1 className="font-display text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-5 leading-[1.08] max-w-[720px]">
-          {title}
-        </h1>
-        <p className="text-[1rem] text-white/85 max-w-[560px] mb-8 leading-[1.78]">{subtitle}</p>
-        <nav className="flex items-center gap-2.5 text-[0.82rem]">
-          <Link
-            to={ROUTES.HOME}
-            className="text-gold hover:text-gold-light transition-colors font-medium"
-          >
-            Home
-          </Link>
-          <FaChevronRight className="text-[0.6rem] text-white/40" />
-          <span className="text-white/60">{breadcrumb}</span>
-        </nav>
+        {/* Left — text, respects the global container margin */}
+        <div
+          className={`flex flex-col justify-center px-6 lg:pr-16 ${compact ? 'pt-14 lg:pt-16 pb-10 lg:pb-12' : 'py-16 lg:py-20'}`}
+          style={{
+            paddingLeft: 'max(1.5rem, calc((100vw - 1200px) / 2 + 1.5rem))',
+            opacity: visible ? 1 : 0,
+            transform: visible ? 'translateY(0)' : 'translateY(20px)',
+            transition: 'opacity 0.65s ease 0.05s, transform 0.65s ease 0.05s',
+          }}
+        >
+          <nav className="flex items-center gap-2 text-[0.78rem] mb-5">
+            <Link
+              to={ROUTES.HOME}
+              className="text-gold hover:text-gold-light transition-colors font-medium"
+            >
+              Home
+            </Link>
+            <FaChevronRight className="text-[0.55rem] text-white/35" />
+            <span className="text-white/55">{breadcrumb}</span>
+          </nav>
+          <h1 className="font-display text-3xl md:text-4xl lg:text-[2.8rem] font-bold text-white mb-4 leading-[1.1]">
+            {title}
+          </h1>
+          <p className="text-[0.95rem] text-white/80 leading-[1.75] max-w-[480px]">{subtitle}</p>
+        </div>
+
+        {/* Right — image bleeds to the full right edge */}
+        {bgImage ? (
+          <div className="relative hidden lg:block">
+            <img
+              src={bgImage}
+              alt=""
+              aria-hidden="true"
+              fetchPriority="high"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{ objectPosition: 'center 25%' }}
+            />
+            {/* soft fade on the left edge to blend with the text panel */}
+            <div className="absolute inset-0 bg-gradient-to-r from-green-dark via-green-dark/30 to-transparent" />
+          </div>
+        ) : (
+          <div className="hidden lg:block" />
+        )}
       </div>
     </section>
   )
