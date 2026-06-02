@@ -96,6 +96,35 @@ export const ServicesPage = () => {
         bgImage="/images/100%25%20Fresh%20or%20Frozen.webp"
       />
 
+      {/* ── TICKER ───────────────────────────────────── */}
+      <div className="bg-green-mid overflow-hidden py-3">
+        <div className="flex whitespace-nowrap animate-ticker">
+          {[0, 1].map((n) => (
+            <span
+              key={n}
+              className="flex items-center gap-8 pr-8 text-white font-semibold text-[0.82rem] uppercase tracking-[0.18em]"
+            >
+              <span>End-to-End Poultry Solutions</span>
+              <span className="text-white/40">·</span>
+              <span>Farm-Gate Aggregation</span>
+              <span className="text-white/40">·</span>
+              <span>Hygienic Processing</span>
+              <span className="text-white/40">·</span>
+              <span>Circular By-Product Valorisation</span>
+              <span className="text-white/40">·</span>
+              <span>Tailored Large-Scale Services</span>
+              <span className="text-white/40">·</span>
+              <span>Cold Chain Distribution</span>
+              <span className="text-white/40">·</span>
+              <span>Zero Waste Commitment</span>
+              <span className="text-white/40">·</span>
+              <span>Premium Quality Guaranteed</span>
+              <span className="text-white/40">·</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* ── STICKY SERVICE NAV ────────────────────────── */}
       <div className="bg-white border-b border-bgray-200 sticky top-[80px] md:top-[116px] z-30">
         <div className="max-w-[1200px] mx-auto px-6 flex gap-1 py-3 overflow-x-auto">

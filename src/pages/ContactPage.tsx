@@ -85,6 +85,35 @@ export const ContactPage = () => {
         bgImage="/images/Farm%20call.jpeg"
       />
 
+      {/* ── TICKER ───────────────────────────────────── */}
+      <div className="bg-green-mid overflow-hidden py-3">
+        <div className="flex whitespace-nowrap animate-ticker">
+          {[0, 1].map((n) => (
+            <span
+              key={n}
+              className="flex items-center gap-8 pr-8 text-white font-semibold text-[0.82rem] uppercase tracking-[0.18em]"
+            >
+              <span>Farmers Welcome</span>
+              <span className="text-white/40">·</span>
+              <span>Investors &amp; Partners</span>
+              <span className="text-white/40">·</span>
+              <span>Buyers &amp; Distributors</span>
+              <span className="text-white/40">·</span>
+              <span>Let's Start a Conversation</span>
+              <span className="text-white/40">·</span>
+              <span>Get a Quote Today</span>
+              <span className="text-white/40">·</span>
+              <span>We Respond Within 1 Business Day</span>
+              <span className="text-white/40">·</span>
+              <span>Reach Out to Our Team</span>
+              <span className="text-white/40">·</span>
+              <span>Join the Pasture Prime Network</span>
+              <span className="text-white/40">·</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* ── CONTACT CARDS ─────────────────────────────── */}
       <section className="bg-white shadow-xl relative z-10">
         <div

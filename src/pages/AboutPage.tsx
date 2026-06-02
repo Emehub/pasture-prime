@@ -20,8 +20,37 @@ export const AboutPage = () => {
         title="About Pasture Prime Ltd"
         subtitle="A start-up built on farmer partnerships, hygienic processing, quality assurance, and a commitment to zero waste."
         breadcrumb="About Us"
-        bgImage="/images/Farm%20Gate%20Aggregation_1.webp"
+        bgImage="/images/Aggregation%201.png"
       />
+
+      {/* ── TICKER ───────────────────────────────────── */}
+      <div className="bg-green-mid overflow-hidden py-3">
+        <div className="flex whitespace-nowrap animate-ticker">
+          {[0, 1].map((n) => (
+            <span
+              key={n}
+              className="flex items-center gap-8 pr-8 text-white font-semibold text-[0.82rem] uppercase tracking-[0.18em]"
+            >
+              <span>Farm-Gate Collection</span>
+              <span className="text-white/40">·</span>
+              <span>Zero Waste Processing</span>
+              <span className="text-white/40">·</span>
+              <span>Hygienically Certified Products</span>
+              <span className="text-white/40">·</span>
+              <span>Farmer-First Pricing</span>
+              <span className="text-white/40">·</span>
+              <span>Premium Fresh &amp; Frozen Cuts</span>
+              <span className="text-white/40">·</span>
+              <span>Ghana's Trusted Poultry Processor</span>
+              <span className="text-white/40">·</span>
+              <span>Supporting Smallholder Farmers</span>
+              <span className="text-white/40">·</span>
+              <span>Cold Chain Distribution</span>
+              <span className="text-white/40">·</span>
+            </span>
+          ))}
+        </div>
+      </div>
 
       {/* ── WHO WE ARE ───────────────────────────────── */}
       <section className="bg-off-white py-24">

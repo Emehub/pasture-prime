@@ -25,8 +25,37 @@ export const FarmersPage = () => {
         compact
       />
 
+      {/* ── TICKER ───────────────────────────────────── */}
+      <div className="bg-green-mid overflow-hidden py-3">
+        <div className="flex whitespace-nowrap animate-ticker">
+          {[0, 1].map((n) => (
+            <span
+              key={n}
+              className="flex items-center gap-8 pr-8 text-white font-semibold text-[0.82rem] uppercase tracking-[0.18em]"
+            >
+              <span>Empowering Smallholder Farmers</span>
+              <span className="text-white/40">·</span>
+              <span>Reliable Market Access</span>
+              <span className="text-white/40">·</span>
+              <span>Fair Farm-Gate Pricing</span>
+              <span className="text-white/40">·</span>
+              <span>Infrastructure to Grow</span>
+              <span className="text-white/40">·</span>
+              <span>Midsized Farmers Welcome</span>
+              <span className="text-white/40">·</span>
+              <span>100% Guaranteed Off-Take</span>
+              <span className="text-white/40">·</span>
+              <span>Free Farm-Gate Collection</span>
+              <span className="text-white/40">·</span>
+              <span>Join Our Farmer Network</span>
+              <span className="text-white/40">·</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* ── FARMER STORY ──────────────────────────────── */}
-      <section className="bg-off-white py-24">
+      <section className="bg-off-white py-10">
         <div className="max-w-[1200px] mx-auto px-6">
           <img
             src="/images/The solutions.webp"

@@ -33,7 +33,7 @@ export const HomePage = () => {
   return (
     <div>
       {/* ── HERO ─────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Fallback / LCP hero image */}
           <img
@@ -48,7 +48,7 @@ export const HomePage = () => {
             <div
               style={{
                 position: 'absolute',
-                top: '50%',
+                top: '30%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
                 minWidth: '177.78vh',
@@ -65,11 +65,6 @@ export const HomePage = () => {
               />
             </div>
           )}
-          {/* Covers YouTube title/info overlay at top of video */}
-          <div
-            className="absolute top-0 left-0 right-0 h-[18%] z-10"
-            style={{ background: 'rgba(26,58,26,1)' }}
-          />
         </div>
         <div className="absolute inset-0 bg-green-dark/72" />
         <div
@@ -79,15 +74,15 @@ export const HomePage = () => {
           }}
         />
 
-        <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-36 w-full">
-          <div className="max-w-[680px]">
+        <div className="relative z-10 max-w-[1200px] mx-auto px-6 pt-0 pb-16 w-full">
+          <div className="max-w-[620px]">
             <Eyebrow text="Farm to Table Excellence" light />
-            <h1 className="font-display text-5xl sm:text-6xl md:text-[5.5rem] font-bold leading-[1.06] text-white mb-7">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-[4rem] font-bold leading-[1.08] text-white mb-5">
               Premium Poultry, <span className="text-gold-light italic">Sustainably</span>
               <br />
               Raised
             </h1>
-            <p className="text-[1.05rem] text-white/85 max-w-[540px] mb-10 leading-[1.78]">
+            <p className="text-[0.97rem] text-white/85 max-w-[500px] mb-8 leading-[1.75]">
               Pasture Prime connects Ghana's smallholder farmers to formal markets through
               structured aggregation, hygienic processing, and a zero-waste circular model.
             </p>

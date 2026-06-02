@@ -20,6 +20,35 @@ export const ProductsPage = () => {
         bgImage="/images/Farm%20Gate%20Aggregation_1.webp"
       />
 
+      {/* ── TICKER ───────────────────────────────────── */}
+      <div className="bg-green-mid overflow-hidden py-3">
+        <div className="flex whitespace-nowrap animate-ticker">
+          {[0, 1].map((n) => (
+            <span
+              key={n}
+              className="flex items-center gap-8 pr-8 text-white font-semibold text-[0.82rem] uppercase tracking-[0.18em]"
+            >
+              <span>Premium Poultry Cuts</span>
+              <span className="text-white/40">·</span>
+              <span>Value-Added By-Products</span>
+              <span className="text-white/40">·</span>
+              <span>Highest Hygiene Standards</span>
+              <span className="text-white/40">·</span>
+              <span>Available Fresh or Frozen</span>
+              <span className="text-white/40">·</span>
+              <span>Quality Certified Processing</span>
+              <span className="text-white/40">·</span>
+              <span>Zero Waste Circular Model</span>
+              <span className="text-white/40">·</span>
+              <span>Whole Chicken &amp; Custom Cuts</span>
+              <span className="text-white/40">·</span>
+              <span>Bulk &amp; Retail Supply</span>
+              <span className="text-white/40">·</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* ── POULTRY CUTS ──────────────────────────────── */}
       <section className="bg-white py-24">
         <div className="max-w-[1200px] mx-auto px-6">

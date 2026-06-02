@@ -66,3 +66,16 @@
 .animate-bounce-scroll {
   animation: bounce-scroll 2s infinite;
 }
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: ticker 28s linear infinite;
+}
