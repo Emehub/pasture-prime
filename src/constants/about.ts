@@ -51,7 +51,7 @@ export const VALUES = [
   {
     icon: FaUsers,
     title: 'Respect for All',
-    desc: 'Treating all stakeholders—farmers, employees, investors, partners, and consumers—with dignity, fostering lasting relationships.',
+    desc: 'Treating all stakeholders, farmers, employees, investors, partners, and consumers, with dignity, fostering lasting relationships.',
   },
 ]
 

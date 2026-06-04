@@ -20,7 +20,7 @@ export const AboutPage = () => {
         title="About Pasture Prime Ltd"
         subtitle="A start-up built on farmer partnerships, hygienic processing, quality assurance, and a commitment to zero waste."
         breadcrumb="About Us"
-        bgImage="/images/Aggregation%201.png"
+        bgImage="/images/Farm%20Gate%20Aggregation_1.webp"
       />
 
       {/* ── TICKER ───────────────────────────────────── */}

@@ -93,7 +93,7 @@ export const ServicesPage = () => {
         title="Our Services"
         subtitle="End-to-end poultry solutions, from farm-gate aggregation and hygienic processing to circular by-product valorisation and tailored large-scale services."
         breadcrumb="Services"
-        bgImage="/images/100%25%20Fresh%20or%20Frozen.webp"
+        bgImage="/images/Aggregation%201.png"
       />
 
       {/* ── TICKER ───────────────────────────────────── */}
