@@ -17,7 +17,7 @@ export const ProductsPage = () => {
         title="Our Poultry Products"
         subtitle="Premium cuts and value-added by-products, processed to the highest hygiene and quality standards and available fresh or frozen."
         breadcrumb="Products"
-        bgImage="/images/100%25%20Fresh%20or%20Frozen.png"
+        bgImage="/images/fresh-frozen.png"
       />
 
       {/* ── TICKER ───────────────────────────────────── */}
