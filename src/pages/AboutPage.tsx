@@ -20,7 +20,7 @@ export const AboutPage = () => {
         title="About Pasture Prime Ltd"
         subtitle="A start-up built on farmer partnerships, hygienic processing, quality assurance, and a commitment to zero waste."
         breadcrumb="About Us"
-        bgImage="/images/Farm%20Gate%20Aggregation_1.webp"
+        bgImage="/images/Farm%20Gate%20Aggregation_1.jpeg"
       />
 
       {/* ── TICKER ───────────────────────────────────── */}
@@ -66,14 +66,14 @@ export const AboutPage = () => {
             }}
           >
             <img
-              src="/images/Farmer Partnership and Smart Processing.webp"
+              src="/images/Farmer Partnership and Smart Processing.jpeg"
               alt="Farmer Partnerships"
               className="w-full h-[480px] object-cover rounded-2xl shadow-xl"
               loading="lazy"
             />
             <div className="absolute -bottom-5 -left-5 w-44 h-32 rounded-xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <img
-                src="/images/Farm Gate Aggregation_1.webp"
+                src="/images/Farm Gate Aggregation_1.jpeg"
                 alt="Farm Gate"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -205,7 +205,7 @@ export const AboutPage = () => {
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: 'url(/images/Farmer%20Partnership%20and%20Smart%20Processing.png)',
+            backgroundImage: 'url(/images/Farmer%20Partnership%20and%20Smart%20Processing.jpeg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -238,7 +238,7 @@ export const AboutPage = () => {
                 >
                   <Icon
                     size={20}
-                    color="#c8a850"
+                    color="#f8843d"
                     style={{ display: 'block', marginBottom: '0.75rem' }}
                   />
                   <h4
@@ -253,7 +253,7 @@ export const AboutPage = () => {
                   >
                     {v.title}
                   </h4>
-                  <p style={{ color: '#d4e8d4', fontSize: '0.78rem', lineHeight: '1.65' }}>
+                  <p style={{ color: '#d7e6da', fontSize: '0.78rem', lineHeight: '1.65' }}>
                     {v.desc}
                   </p>
                 </div>
@@ -296,7 +296,7 @@ export const AboutPage = () => {
                   <span
                     className="absolute top-4 right-6 font-display text-[6rem] font-bold leading-none select-none pointer-events-none"
                     style={{
-                      color: p.highlight ? 'rgba(200,168,80,0.12)' : 'rgba(232,232,228,0.8)',
+                      color: p.highlight ? 'rgba(248,132,61,0.12)' : 'rgba(232,232,228,0.8)',
                     }}
                   >
                     {p.num}
@@ -304,7 +304,7 @@ export const AboutPage = () => {
                   <div className="relative">
                     <Icon
                       size={26}
-                      color={p.highlight ? '#c8a850' : '#2d6a2d'}
+                      color={p.highlight ? '#f8843d' : '#1a6b31'}
                       style={{ display: 'block', marginBottom: '1rem' }}
                     />
                     <h3

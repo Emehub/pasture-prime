@@ -21,7 +21,7 @@ export const FarmersPage = () => {
         title="Our Farmer Network"
         subtitle="Empowering smallholder and midsized poultry farmers with reliable market access, fair pricing, and the infrastructure to grow."
         breadcrumb="Our Farmers"
-        bgImage="/images/Our%20Farmer%20Network.webp"
+        bgImage="/images/Our%20Farmer%20Network.jpeg"
         compact
       />
 
@@ -58,8 +58,9 @@ export const FarmersPage = () => {
       <section className="bg-off-white py-10">
         <div className="max-w-[1200px] mx-auto px-6">
           <img
-            src="/images/The solutions.webp"
+            src="/images/The solutions.jpeg"
             alt="Solving the Fragmentation Problem"
+            loading="lazy"
             className="w-full rounded-2xl shadow-xl"
           />
         </div>
@@ -116,7 +117,7 @@ export const FarmersPage = () => {
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                   <Icon
                     size={24}
-                    color="#c8a850"
+                    color="#f8843d"
                     style={{ display: 'block', marginBottom: '1rem' }}
                   />
                   <h4 className="font-display text-[1.05rem] font-bold text-bgray-800 mb-2">
@@ -149,7 +150,7 @@ export const FarmersPage = () => {
             }}
           >
             <img
-              src="/images/Our Farmer Network.webp"
+              src="/images/Our Farmer Network.jpeg"
               alt="Smallholder and Midsized Farmers"
               className="w-full max-h-[520px] object-contain rounded-2xl shadow-xl"
               loading="lazy"
@@ -183,7 +184,7 @@ export const FarmersPage = () => {
                   key={item}
                   className="flex items-center gap-2.5 p-3.5 bg-white rounded-lg border border-bgray-100 hover:border-green-light hover:bg-green-pale transition-all"
                 >
-                  <FaCircleCheck size={14} color="#2d6a2d" style={{ flexShrink: 0 }} />
+                  <FaCircleCheck size={14} color="#1a6b31" style={{ flexShrink: 0 }} />
                   <span className="text-[0.87rem] font-medium text-bgray-700">{item}</span>
                 </div>
               ))}
@@ -228,7 +229,7 @@ export const FarmersPage = () => {
                 >
                   <span
                     className="absolute top-4 right-5 font-display text-[5rem] font-bold leading-none select-none pointer-events-none"
-                    style={{ color: isLast ? 'rgba(200,168,80,0.12)' : 'rgba(232,232,228,0.8)' }}
+                    style={{ color: isLast ? 'rgba(248,132,61,0.12)' : 'rgba(232,232,228,0.8)' }}
                   >
                     {s.num}
                   </span>
@@ -238,7 +239,7 @@ export const FarmersPage = () => {
                         isLast ? 'bg-white/10' : 'bg-green-pale'
                       }`}
                     >
-                      <Icon size={20} color={isLast ? '#c8a850' : '#2d6a2d'} />
+                      <Icon size={20} color={isLast ? '#f8843d' : '#1a6b31'} />
                     </div>
                     <h3
                       className={`font-display text-[1.15rem] font-bold mb-3 ${

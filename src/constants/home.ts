@@ -33,17 +33,17 @@ export const HOME_PILLARS = [
 
 export const HOME_PRODUCTS_PREVIEW = [
   {
-    img: '/images/Drumstick 3D 3 views 1 (2).png',
+    img: '/images/Drumstick 3D 3 views 1.jpeg',
     name: 'Drumsticks',
     desc: 'Meaty, fresh chicken drumsticks sourced from sustainably sourced and healthy birds.',
   },
   {
-    img: '/images/Chicken Breast 3d (2).png',
+    img: '/images/Chicken Breast 3d (2).jpeg',
     name: 'Chicken Breast',
     desc: 'Lean, premium boneless and bone-in chicken breast cuts. Packed in standardized sizes and weight ranges.',
   },
   {
-    img: '/images/Animal Feed Ingredients_1.png',
+    img: '/images/Animal Feed Ingredients_1.jpeg',
     name: 'By-Products',
     desc: 'Animal feed ingredients and organic manure from our circular processing model.',
   },

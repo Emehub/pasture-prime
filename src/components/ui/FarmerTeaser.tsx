@@ -13,7 +13,7 @@ export const FarmerTeaser = () => {
       <div
         className="absolute inset-0 opacity-25"
         style={{
-          backgroundImage: 'url(/images/Our%20Farmer%20Network.png)',
+          backgroundImage: 'url(/images/Our%20Farmer%20Network.jpeg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -65,12 +65,12 @@ export const FarmerTeaser = () => {
               >
                 <Icon
                   size={22}
-                  color="#c8a850"
+                  color="#f8843d"
                   style={{ display: 'block', marginBottom: '0.6rem' }}
                 />
                 <p
                   style={{
-                    color: '#1a3a1a',
+                    color: '#114620',
                     fontWeight: 700,
                     fontSize: '0.92rem',
                     marginBottom: '0.35rem',

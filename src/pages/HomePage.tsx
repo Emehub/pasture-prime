@@ -37,7 +37,7 @@ export const HomePage = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Fallback / LCP hero image */}
           <img
-            src="/images/Farmer Partnership and Smart Processing.webp"
+            src="/images/Farmer Partnership and Smart Processing.jpeg"
             alt=""
             aria-hidden="true"
             fetchPriority="high"
@@ -70,7 +70,7 @@ export const HomePage = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to right, rgba(26,58,26,0.65) 0%, transparent 68%)',
+            background: 'linear-gradient(to right, rgba(17,70,32,0.65) 0%, transparent 68%)',
           }}
         />
 
@@ -78,7 +78,7 @@ export const HomePage = () => {
           <div className="max-w-[620px]">
             <Eyebrow text="Farm to Table Excellence" light />
             <h1 className="font-display text-4xl sm:text-5xl md:text-[4rem] font-bold leading-[1.08] text-white mb-5">
-              Premium Poultry, <span className="text-gold-light italic">Sustainably</span>
+              Premium Poultry, <span className="text-gold italic">Sustainably</span>
               <br />
               Raised
             </h1>
@@ -174,14 +174,14 @@ export const HomePage = () => {
             }}
           >
             <img
-              src="/images/Farmer Partnership and Smart Processing.webp"
+              src="/images/Farmer Partnership and Smart Processing.jpeg"
               alt="Farmer Partnerships"
               className="w-full h-[460px] object-cover rounded-2xl shadow-xl"
               loading="lazy"
             />
             <div className="absolute -bottom-5 -left-5 w-44 h-32 rounded-xl overflow-hidden border-4 border-white shadow-xl hidden lg:block">
               <img
-                src="/images/Farm Gate Aggregation_1.webp"
+                src="/images/Farm Gate Aggregation_1.jpeg"
                 alt="Farm Gate"
                 className="w-full h-full object-cover"
                 loading="lazy"

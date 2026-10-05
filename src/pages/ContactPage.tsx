@@ -126,8 +126,8 @@ export const ContactPage = () => {
               <>
                 <div className="absolute top-0 left-0 right-0 h-[3px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 <div className="w-13 h-13 bg-green-pale rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-green-dark transition-colors duration-300">
-                  <Icon size={20} color="#2d6a2d" className="group-hover:hidden" />
-                  <Icon size={20} color="#c8a850" className="hidden group-hover:block" />
+                  <Icon size={20} color="#1a6b31" className="group-hover:hidden" />
+                  <Icon size={20} color="#f8843d" className="hidden group-hover:block" />
                 </div>
                 <h4 className="font-display font-bold text-bgray-800 mb-1.5">{c.title}</h4>
                 <p className="font-semibold text-bgray-800 text-[0.92rem] mb-0.5">{c.main}</p>
@@ -196,7 +196,7 @@ export const ContactPage = () => {
                     className="flex items-start gap-3.5 p-4 bg-white rounded-xl border border-bgray-100 hover:border-green-light hover:shadow-sm transition-all group"
                   >
                     <div className="w-9 h-9 bg-green-pale rounded-lg flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-green-mid transition-colors">
-                      <Icon size={14} color="#2d6a2d" className="group-hover:hidden" />
+                      <Icon size={14} color="#1a6b31" className="group-hover:hidden" />
                       <Icon size={14} color="#ffffff" className="hidden group-hover:block" />
                     </div>
                     <div>
@@ -216,7 +216,7 @@ export const ContactPage = () => {
                 return (
                   <div key={item.title} className="flex items-start gap-4">
                     <div className="w-10 h-10 bg-green-pale rounded-lg flex items-center justify-center shrink-0">
-                      <Icon size={15} color="#2d6a2d" />
+                      <Icon size={15} color="#1a6b31" />
                     </div>
                     <div>
                       <strong className="block text-bgray-800 text-[0.88rem] font-semibold mb-0.5">
@@ -368,7 +368,7 @@ export const ContactPage = () => {
 
                 {status === 'success' && (
                   <div className="flex items-start gap-3 p-4 bg-green-pale border border-green-light rounded-xl">
-                    <FaCircleCheck size={18} color="#2d6a2d" className="shrink-0 mt-0.5" />
+                    <FaCircleCheck size={18} color="#1a6b31" className="shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-green-dark text-[0.9rem]">Message sent!</p>
                       <p className="text-bgray-600 text-[0.83rem] mt-0.5">
@@ -458,7 +458,7 @@ export const ContactPage = () => {
                   <span>{faq.q}</span>
                   <FaPlus
                     size={13}
-                    color="#2d6a2d"
+                    color="#1a6b31"
                     className={`shrink-0 ml-4 transition-transform duration-300 ${openFaq === i ? 'rotate-45' : ''}`}
                   />
                 </button>

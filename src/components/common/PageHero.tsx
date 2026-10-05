@@ -60,7 +60,7 @@ export const PageHero = ({
 
         {/* Right — image bleeds to the full right edge */}
         {bgImage ? (
-          <div className="relative hidden lg:block">
+          <div className="relative h-56 sm:h-72 lg:h-auto">
             <img
               src={bgImage}
               alt=""
@@ -70,8 +70,8 @@ export const PageHero = ({
               className="absolute inset-0 w-full h-full object-cover"
               style={{ objectPosition: 'center 25%' }}
             />
-            {/* soft fade on the left edge to blend with the text panel */}
-            <div className="absolute inset-0 bg-gradient-to-r from-green-dark via-green-dark/30 to-transparent" />
+            {/* soft fade toward the text panel (top on mobile, left on desktop) */}
+            <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-green-dark via-green-dark/30 to-transparent" />
           </div>
         ) : (
           <div className="hidden lg:block" />

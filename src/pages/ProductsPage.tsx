@@ -17,7 +17,7 @@ export const ProductsPage = () => {
         title="Our Poultry Products"
         subtitle="Premium cuts and value-added by-products, processed to the highest hygiene and quality standards and available fresh or frozen."
         breadcrumb="Products"
-        bgImage="/images/fresh-frozen.png"
+        bgImage="/images/fresh-frozen.jpeg"
       />
 
       {/* ── TICKER ───────────────────────────────────── */}
@@ -186,7 +186,7 @@ export const ProductsPage = () => {
                       <div key={s} className="flex items-start gap-2">
                         <FaCircleCheck
                           size={13}
-                          color="#2d6a2d"
+                          color="#1a6b31"
                           style={{ flexShrink: 0, marginTop: '0.2rem' }}
                         />
                         <span className="text-[0.83rem] text-bgray-600">{s}</span>

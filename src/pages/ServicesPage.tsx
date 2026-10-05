@@ -26,7 +26,7 @@ const FeatureList = ({ items, light = false }: { items: string[]; light?: boolea
       <div key={f} className="flex items-start gap-2.5">
         <FaCircleCheck
           size={14}
-          color={light ? '#f0e0a0' : '#2d6a2d'}
+          color={light ? '#fdd4bb' : '#1a6b31'}
           style={{ flexShrink: 0, marginTop: '0.2rem' }}
         />
         <span
@@ -93,7 +93,7 @@ export const ServicesPage = () => {
         title="Our Services"
         subtitle="End-to-end poultry solutions, from farm-gate aggregation and hygienic processing to circular by-product valorisation and tailored large-scale services."
         breadcrumb="Services"
-        bgImage="/images/Aggregation%201.png"
+        bgImage="/images/Farm%20Gate%20Aggregation_1.jpeg"
       />
 
       {/* ── TICKER ───────────────────────────────────── */}
@@ -193,7 +193,7 @@ export const ServicesPage = () => {
             }}
           >
             <img
-              src="/images/Poultry Aggregation.png"
+              src="/images/Aggregation 1.jpeg"
               alt="Poultry Aggregation"
               className="w-full object-contain rounded-2xl shadow-xl"
               loading="lazy"
@@ -216,7 +216,7 @@ export const ServicesPage = () => {
             }}
           >
             <img
-              src="/images/Processing and Distribution 1.webp"
+              src="/images/Processing and Distribution.jpeg"
               alt="Processing and Distribution"
               className="w-full object-contain rounded-2xl shadow-xl"
               loading="lazy"
@@ -272,7 +272,7 @@ export const ServicesPage = () => {
         <div
           className="absolute inset-0 opacity-15"
           style={{
-            backgroundImage: 'url(/images/Farmer%20Partnership%20and%20Smart%20Processing.png)',
+            backgroundImage: 'url(/images/Farmer%20Partnership%20and%20Smart%20Processing.jpeg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -330,17 +330,17 @@ export const ServicesPage = () => {
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
                     style={{
-                      background: 'rgba(200,168,80,0.15)',
-                      border: '1px solid rgba(200,168,80,0.3)',
+                      background: 'rgba(248,132,61,0.15)',
+                      border: '1px solid rgba(248,132,61,0.3)',
                     }}
                   >
-                    <Icon size={16} color="#c8a850" />
+                    <Icon size={16} color="#f8843d" />
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span
                         className="text-[0.62rem] font-bold tracking-widest"
-                        style={{ color: '#c8a850' }}
+                        style={{ color: '#f8843d' }}
                       >
                         {step.num}
                       </span>
@@ -419,7 +419,7 @@ export const ServicesPage = () => {
             }}
           >
             <img
-              src="/images/Tailored Services 1.webp"
+              src="/images/Tailored Services 1.jpeg"
               alt="Tailored Processing Service"
               className="w-full object-contain rounded-2xl shadow-xl"
               loading="lazy"
